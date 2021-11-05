@@ -5,7 +5,7 @@ const kafka = new Kafka({
     brokers: ['localhost:9092']
 });
 
-const topic = 'issue-certificate'
+const topic = 'kafka-sample'
 const consumer = kafka.consumer({ groupId: 'certificate-group' });
 
 async function run() {
@@ -14,6 +14,7 @@ async function run() {
     await consumer.run({
         eachMessage: async ({ topic, partition, message }) => {
             console.log({
+                topic,
                 partition,
                 offset: message.offset,
                 value: message.value.toString(),

@@ -2,11 +2,11 @@ import express from "express";
 
 const routes = express.Router();
 
-routes.post('/certifications', async (req, res) => {
+routes.post('/send-message', async (req, res) => {
     await req.producer.send({
-        topic: 'issue-certificate',
+        topic: 'kafka-sample',
         messages: [
-            {value: 'Hello kafka!'}
+            { value: 'Hello kafka!' }
         ]
     })
 
