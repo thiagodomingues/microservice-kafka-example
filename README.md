@@ -6,10 +6,10 @@
 **Run in root directory:**
 - docker-compose up -d
 
-**Producer directory: **
+**Producer directory:**
 - npm install
 - npm run dev 
 
-**Consumer directory: **
+**Consumer directory:**
 - npm install
 - node src/index.js      
