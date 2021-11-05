@@ -2,7 +2,7 @@
 - Kafka
 - Node
 
-#SETUP ENVIRONMENT && TEST
+# SETUP ENVIRONMENT && TEST
 **Run in root directory:**
 - docker-compose up -d
 
